@@ -1,0 +1,27 @@
+<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<!-- filename: anthy.xml -->
+<component>
+	<name>org.freedesktop.IBus.Anthy</name>
+	<description>Anthy Component</description>
+	<exec>${libexecdir}/ibus-engine-anthy --ibus</exec>
+	<version>@VERSION@</version>
+	<author>Peng Huang &lt;shawn.p.huang@gmail.com&gt;</author>
+	<license>GPL</license>
+	<homepage>http://code.google.com/p/ibus</homepage>
+	<textdomain>ibus-anthy</textdomain>
+
+	<!-- for static engines -->
+	<engines>
+		<engine>
+			<name>anthy</name>
+			<language>ja</language>
+			<license>GPL</license>
+			<author>Peng Huang &lt;shawn.p.huang@gmail.com&gt;</author>
+			<icon>${pkgdatadir}/icons/ibus-anthy.png</icon>
+			<layout>jp</layout>
+			<longname>Anthy</longname>
+			<description>Anthy Input Method</description>
+			<rank>99</rank>
+		</engine>
+	</engines>
+</component>

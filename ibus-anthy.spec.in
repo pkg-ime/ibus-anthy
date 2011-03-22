@@ -1,0 +1,68 @@
+%{!?python_sitearch: %define python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
+%{!?enable_kasumi: %define enable_kasumi 0}
+
+%define require_ibus_version            1.2.0.20100111
+%define require_intltool_version        0.41.1
+%define require_pygtk2_version          2.15.2
+
+Name:       @PACKAGE_NAME@
+Version:    @PACKAGE_VERSION@
+Release:    1%{?dist}
+Summary:    The Anthy engine for IBus input platform
+License:    GPLv2+
+Group:      System Environment/Libraries
+URL:        http://code.google.com/p/ibus/
+Source0:    http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
+
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+
+BuildRequires:  anthy-devel
+BuildRequires:  gettext-devel
+BuildRequires:  intltool >= %require_intltool_version
+BuildRequires:  libtool
+BuildRequires:  pkgconfig
+BuildRequires:  python2-devel
+BuildRequires:  swig
+
+Requires:   pygtk2 >= %require_pygtk2_version
+Requires:   ibus   >= %require_ibus_version
+Requires:   anthy
+%if %enable_kasumi
+Requires:   kasumi
+%endif
+
+%description
+The Anthy engine for IBus platform. It provides Japanese input method from
+libanthy.
+
+%prep
+%setup -q
+
+%build
+%configure --disable-static
+# make -C po update-gmo
+make %{?_smp_mflags}
+
+%install
+rm -rf $RPM_BUILD_ROOT
+make DESTDIR=${RPM_BUILD_ROOT} install
+rm -f $RPM_BUILD_ROOT%{python_sitearch}/_anthy.la
+
+%find_lang %{name}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files -f %{name}.lang
+%defattr(-,root,root,-)
+%doc AUTHORS COPYING README
+# %dir %{python_sitearch}/ibus
+%{python_sitearch}/anthy.py*
+%{python_sitearch}/_anthy.so
+%{_libexecdir}/ibus-*-anthy
+%{_datadir}/ibus-anthy
+%{_datadir}/ibus/component/*
+
+%changelog
+* @DATE_DISPLAY@ Peng Huang <shawn.p.huang@gmail.com> - @PACKAGE_VERSION@-1
+- Current version.

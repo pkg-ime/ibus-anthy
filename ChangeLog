@@ -1,0 +1,2314 @@
+commit 797b4a230935036498ec71378700f0babe00a9ca
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-12-01 14:39:26 +0900
+
+    Released 1.2.5
+
+M	configure.ac
+
+commit d58f2b95400d0474fc6744987943a502f960c00f
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-25 19:02:32 +0900
+
+    Fixed deleting voiced consonants. (#1148)
+    
+    Patch is provided by takayuki988@star.odn.ne.jp
+
+M	engine/kana.py
+
+commit ef1a6edef6bd269677b57aa243dd6dd2e9a221a9
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-23 18:33:58 +0900
+
+    Fixed romaji_typing_rule and kana_typing_rule receives UTF-8 keys. (#1146)
+
+M	engine/kana.py
+M	engine/romaji.py
+
+commit f8f201c12fbd2af2154e13d5d46bff67f714179d
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-23 18:01:56 +0900
+
+    Fixed the custom tables with new keys.
+
+M	engine/kana.py
+M	engine/romaji.py
+M	engine/thumb.py
+M	setup/anthyprefs.py.in
+M	setup/main.py
+M	setup/prefs.py
+
+commit aaa2f6ad0ff5da7915b33b5d30ded25def187e7c
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-15 13:25:11 +0900
+
+    Fixed SEGV when key tables are customized in new gconf.
+
+M	setup/main.py
+M	setup/prefs.py
+
+commit fec83a2862a021a4cda94a07abd16b151c5f1525
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-15 13:24:22 +0900
+
+    Added a warning for ibus.
+
+M	engine/engine.py
+
+commit 8e3306424226f907aa585427689193ae7b0f9d74
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-28 18:54:42 +0900
+
+    Supported ibus.engine.update_preedit_text_with_mode
+
+M	engine/engine.py
+
+commit 325e69f5abb193c6127bdeb3ad738e17c1cfcb8a
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-26 15:44:07 +0900
+
+    Released 1.2.4
+
+M	configure.ac
+M	ibus-anthy.spec.in
+
+commit 0a8ec8bd4d68c75f407963c2196e69acb5299ab1
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-26 11:11:35 +0900
+
+    Fixed preferences icon name s/preferences-desktop/gtk-preferences/ (#1114)
+
+M	engine/engine.py
+
+commit 35f2731281f4b1f71bdd54f75df75f853a6bb02b
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-25 14:26:59 +0900
+
+    Supported engine.Engine.reset (#1099)
+
+M	engine/engine.py
+
+commit e6696d8920798b69d7b288ed0cd4b710131d9e4b
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-25 10:40:38 +0900
+
+    Fixed s/python/@PYTHON@/ in libexec scripts. (#1115)
+    
+    The patch is provided by federico.schwindt@google.com
+
+M	engine/ibus-engine-anthy.in
+M	setup/ibus-setup-anthy.in
+
+commit 91ddf1fe0a88a97bbc34d248ef675761c5ef2d2e
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-21 11:31:13 +0900
+
+    Fixed Hiragana to Katakana with F7 key.
+
+M	engine/kana.py
+M	engine/romaji.py
+M	engine/thumb.py
+
+commit 9901e45ca39834a0c7066ca05c0d325f7869539f
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-21 11:29:15 +0900
+
+    Fixed typo.
+
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+M	setup/main.py
+
+commit 2850985d49e7fe412b45e4f1a187c19360a9be3e
+Author: julroy67 <julroy67@gmail.com>
+Date:   2010-10-21 11:20:36 +0900
+
+    Fixed a translation.
+
+M	po/fr.po
+
+commit c1c3731e256fc2223f9c312c148195d7202581e1
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-19 00:04:00 +0900
+
+    Fixed key_input_dialog key event and focused label.
+
+M	setup/main.py
+M	setup/setup.glade
+
+commit 3d1ac32900bfc72e1345f4afcea5615d07157919
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-19 00:01:09 +0900
+
+    Fixed thumb-shift key table customization.
+
+M	engine/thumb.py
+
+commit 67916c71f1b58483ddc3bc19b8cf43b016908533
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-16 23:13:54 +0900
+
+    Released 1.2.3
+
+M	configure.ac
+
+commit fa5e3252123aaefd5d53da7b37b94e0c687de94c
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-16 22:11:06 +0900
+
+    Contributed fr.po by Humbert Julien <julroy67@gmail.com>
+
+M	po/fr.po
+
+commit 63ab8ce17f75a01e8def7b97b1ffd56e8b7339bb
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-15 18:20:13 +0900
+
+    Released 1.2.2.20101015
+
+M	configure.ac
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+
+commit 4899169b33e41542d5ed59ef9355178e2f14db6e
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-15 18:08:39 +0900
+
+    Added version info.
+
+M	setup/Makefile.am
+M	setup/anthyprefs.py.in
+M	setup/main.py
+M	setup/setup.glade
+
+commit 35de39bf7fb43d429672b30996adaf65e6a7de4a
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-15 17:02:33 +0900
+
+    Fixed NetBSD ENV issue (#1029)
+
+M	configure.ac
+M	engine/Makefile.am
+M	setup/Makefile.am
+
+commit 609de132807b7c36b9db3ad16905b908f877f67e
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-15 16:50:21 +0900
+
+    Fixed commit_nth_segment
+    
+    http://www.mail-archive.com/anthy-dev@lists.sourceforge.jp/msg00264.html
+
+M	engine/engine.py
+M	engine/jastring.py
+
+commit ddaf0a50acde55db87ff007c92ced28be1550cfd
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-15 13:04:19 +0900
+
+    Added custom key table.
+
+M	engine/jastring.py
+M	engine/kana.py
+M	engine/romaji.py
+M	engine/tables.py
+M	engine/thumb.py
+M	setup/anthyprefs.py.in
+M	setup/main.py
+M	setup/setup.glade
+
+commit db8a7878f30d5dc528487063403db8757b934986
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-12 11:28:39 +0900
+
+    Updated anthy icon.
+
+A	icons/ibus-anthy-old.png
+M	icons/ibus-anthy.png
+
+commit f7f89e9bbd305994008db422b523dab67a6694d7
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-12 11:19:29 +0900
+
+    Added menu item labels.
+
+M	engine/engine.py
+M	ibus-anthy.spec.in
+M	setup/setup.glade
+
+commit cf6bba87884933cc8d0f96b11b63dd12eae0eee2
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-06-05 13:58:21 +0900
+
+    Fix ATOK commit_selected_segment
+    
+    https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/582036
+
+M	setup/anthyprefs.py.in
+
+commit 9c70d6ba2c3f346add0fa72fc55ca7899b5fc98e
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-04-26 14:26:41 +0900
+
+    Fix sh equal and swig include path. #883, #884
+
+M	configure.ac
+M	engine/Makefile.am
+
+commit 34030e3f1115e34e5dd9c9c419ac4bb73bf62d09
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-04-23 10:38:36 +0900
+
+    Bump to 1.2.1
+
+M	configure.ac
+
+commit c7e237e3e3110a5b5d321e31546812e08842e046
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-04-19 10:15:16 +0900
+
+    Fix kasumi icon path to get prefix.
+
+M	configure.ac
+M	engine/engine.py
+M	setup/Makefile.am
+M	setup/anthyprefs.py.in
+
+commit ec9cda8a73caf5dad6a6a0da5d5813fbd8887169
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-04-16 22:47:42 +0900
+
+    Add intltool version for BuildRequires to support *.py.in
+    
+    https://bugs.launchpad.net/intltool/+bug/493403
+
+M	ibus-anthy.spec.in
+
+commit b259ba4db902d492d0676e1760f1d129a0c1e4c5
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-04-16 22:36:32 +0900
+
+    Fix OSError when the link of zipcode.t is broken. #854
+
+M	configure.ac
+M	engine/engine.py
+M	po/POTFILES.in
+A	po/POTFILES.skip
+M	setup/Makefile.am
+M	setup/anthyprefs.py.in
+
+commit f6c1d1dde7179c26d07f8d7c9558866e6acb1886
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-04-11 01:26:00 +0900
+
+    Rename anthyprefs.py to anthyprefs.py.in to customize the file path
+    of Anthy zipcode.t
+
+D	setup/anthyprefs.py
+A	setup/anthyprefs.py.in
+
+commit 6ee44a752a2852ae6d661d541502af37bfbd0ba3
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-04-05 15:20:39 +0900
+
+    Fix to i18n system dict label
+
+M	setup/main.py
+
+commit f6edf40762342bd1c92d26ba4fc4e089fd7bf1be
+Author: julroy67 <julroy67@gmail.com>
+Date:   2010-03-12 18:59:00 +0100
+
+    Update fr.po
+
+M	po/fr.po
+M	po/ja.po
+
+commit 9c00e1841bfbba51e0a87b5b709483086148a82d
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-03-12 13:45:56 +0900
+
+    Fix typo of ja.po
+
+M	po/ja.po
+
+commit df32fd5eade22a7c8606a283b2cb437b89dc25a1
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-03-12 12:05:13 +0900
+
+    Fix misc typo
+
+M	README
+M	setup/anthyprefs.py
+M	setup/setup.glade
+
+commit 582a091c53ea0d4a77ea2b0f144921c61a888a02
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-03-12 00:21:09 +0900
+
+    Updated ja.po
+
+M	po/ja.po
+
+commit 915873192f128bd0717939af1dfa80e654dde501
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-03-11 19:43:09 +0900
+
+    Updated .po files with the latest pot.
+
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+
+commit 0b8a908719588d202bd83c85dc2052f5144bb691
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-03-11 19:35:03 +0900
+
+    Fix Segment convertion mode. #147
+
+M	engine/engine.py
+M	setup/anthyprefs.py
+M	setup/main.py
+M	setup/setup.glade
+
+commit f8c60a9844df6da08cc0327b62dec6917961dfc4
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-03-10 17:28:37 +0900
+
+    Add dict switch menu #571728
+
+M	engine/anthy.i
+M	engine/engine.py
+M	po/POTFILES.in
+M	setup/anthyprefs.py
+M	setup/main.py
+M	setup/prefs.py
+M	setup/setup.glade
+
+commit 1c30de7977d789d084df6122b73f9dc6a4b44f26
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-03-10 17:22:46 +0900
+
+    Imported symbol.t from http://github.com/fujiwarat/im-dict-ja/blob/master/data/symbol.txt
+
+M	Makefile.am
+M	configure.ac
+A	data/Makefile.am
+A	data/symbol.t
+
+commit e030899c294b1bbb99f385e960b51a1a8d5909a4
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-03-05 10:23:36 +0900
+
+    Fix NICOLA-F and NICOLA-A thumb-shift #756
+
+M	engine/engine.py
+M	engine/jastring.py
+M	engine/thumb.py
+M	setup/anthyprefs.py
+M	setup/main.py
+M	setup/setup.glade
+
+commit 34b256da4ce65ca5479906cf906971e13fef1b8a
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-02-15 18:56:37 +0900
+
+    Fix romaji_typing_rule. #777
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit 9f67c6def39759acefd5b877226a1b407685047c
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-02-12 16:44:09 +0900
+
+    Fix crash with enabled global input method #564268
+
+M	engine/engine.py
+
+commit 866a2668eb3d0f5fb237ca1b32f745b35935d968
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-02-12 10:42:18 +0900
+
+    Fix Shift + char with CapsLock ON in romaji mode.
+
+M	engine/engine.py
+M	engine/jastring.py
+M	engine/romaji.py
+
+commit afde33eb8a14d7922e475a967d66ba230c519af0
+Author: hidegit <abe.sendai@gmail.com>
+Date:   2010-02-07 20:15:31 +0900
+
+    Fix chattering bug.
+    
+    http://okuma-shinkan.cocolog-nifty.com/newshinkan/2009/12/ibus-8ee9.html
+
+M	engine/engine.py
+
+commit 660f970b03ef188a37f0a00e2598c1721b7a9bd8
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-02-04 16:53:08 +0900
+
+    Add pygtk2 dependency for _wrap_gtk_image_menu_item_new()
+    (Actually ibus calls it.)
+    
+    http://git.gnome.org/browse/pygtk/commit/?id=fbb3e653ab1c4f467d7aae61e8444fab8c839af1
+
+M	ibus-anthy.spec.in
+
+commit 2d3be0aa51ce6a5fe116dd3e216aaf0eabdfd58e
+Author: Takao Fujiwara <tfujiwar@redhat.com>
+Date:   2010-01-15 12:20:06 +0900
+
+    Fix icon in ibus-setup-anthy.
+
+M	setup/main.py
+
+commit e21b1fc31da27d27dc8c8b08cef780cf0725b937
+Author: Takao Fujiwara <tfujiwar@redhat.com>
+Date:   2010-01-15 11:21:32 +0900
+
+    Update kasumi installation.
+
+M	README
+M	ibus-anthy.spec.in
+
+commit 6e95720cefb8da30ada3c686df8f9c636b2418bd
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-01-15 01:33:34 +0900
+
+    Bumped to 1.2.0.20100115
+
+M	ibus-anthy.spec.in
+
+commit 879d7499c0e8971cdab4de5985a4b5d2fa917847
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-01-15 01:28:57 +0900
+
+    Update README to explain the installation.
+
+M	README
+
+commit e13d48df80614c372a9785239781002627c575da
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-01-15 01:02:52 +0900
+
+    Update translations.
+
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+
+commit c582132ab69cb1c092a8e667bf0ec99645aff0d4
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-01-15 00:54:22 +0900
+
+    Fix typo gconf keys. #731
+
+M	engine/engine.py
+M	setup/anthyprefs.py
+M	setup/main.py
+M	setup/prefs.py
+M	setup/setup.glade
+
+commit 4fe1e6d1c32f0450218098f6cd947be37852edf5
+Author: julroy67 <julroy67@gmail.com>
+Date:   2010-01-14 14:04:53 +0900
+
+    Update translations.
+
+M	po/fr.po
+
+commit 24ee4689479cf2d048a8554a60984dcec152c919
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-01-14 13:20:28 +0900
+
+    Fix License and Copyright
+
+M	Makefile.am
+M	configure.ac
+M	engine/Makefile.am
+M	engine/anthy.i
+M	engine/anthy.xml.in.in
+M	engine/engine.py
+M	engine/factory.py
+M	engine/ibus-engine-anthy.in
+M	engine/jastring.py
+M	engine/kana.py
+M	engine/romaji.py
+M	engine/segment.py
+M	engine/tables.py
+M	engine/thumb.py
+M	icons/Makefile.am
+M	m4/Makefile.am
+M	po/LINGUAS
+M	po/Makevars
+M	po/POTFILES.in
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+M	setup/Makefile.am
+M	setup/anthyprefs.py
+M	setup/ibus-setup-anthy.in
+M	setup/main.py
+M	setup/prefs.py
+
+commit e1893737066698ae442c4c7f65f82adabfd455d5
+Author: Daiki Ueno <ueno@unixuser.org>
+Date:   2010-01-13 23:03:33 +0900
+
+    Fix typo.
+
+M	engine/Makefile.am
+M	ibus-anthy.spec.in
+M	setup/main.py
+M	setup/setup.glade
+
+commit 012a4d8a87e19263be25d4523fbf36884044102a
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-01-13 22:07:17 +0900
+
+    Fix unicode argument.
+
+M	engine/engine.py
+
+commit bb4ec215022956ffd50628f66ddd349addde8b91
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-01-13 13:01:31 +0900
+
+    Updated translations with the latest pot.
+
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+
+commit b3129181a0da8c424d68050c94f44f582d9fc275
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-01-13 12:51:30 +0900
+
+    Implement kasumi GUI. #550001
+
+M	engine/engine.py
+
+commit 3663a5ed2e9e185d099829103bbaf6141e2c6185
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-12-07 13:45:19 +0900
+
+    Contributed fr.po by Humbert Julien <julroy67@gmail.com> #673
+
+M	AUTHORS
+M	po/fr.po
+
+commit ea646e27ddfb64f15c247f09fbd329d60afec291
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-12-01 11:35:58 +0900
+
+    Fix convert_to_half. #667
+
+M	engine/engine.py
+
+commit baffd94317ab56e2a947357e9cb1c2ef4dc8259d
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-11-24 16:07:54 +0900
+
+    Updated translations from the latest pot.
+
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+
+commit 66289944d40ad8c11d288fea9cdc03dcce5ddc27
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-11-24 16:06:02 +0900
+
+    Fix a shortcut key.
+
+M	setup/setup.glade
+
+commit 6665dac9c02b8d4fe9dda5e1df2a36680fa47bc2
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-11-24 15:51:43 +0900
+
+    Add symbol type feature #150
+
+M	engine/jastring.py
+M	setup/anthyprefs.py
+M	setup/main.py
+M	setup/setup.glade
+
+commit 33ad32c26e1a9c73ae0e7329de201e26626817a0
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-11-24 15:42:29 +0900
+
+    Fix a KeyError exception. #531696
+
+M	engine/engine.py
+
+commit 68ed9d15467f1f1451cccecb9d1b3198884cf9d8
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-11-20 19:30:37 +0900
+
+    Fix key config bug.
+
+M	setup/main.py
+
+commit 94d89ef2841f9f2a700fe4cb3af8667eb670ccc2
+Merge: 72b550e 302cc38
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-11-20 18:30:20 +0900
+
+    Merge remote branch 'fujiwarat/master'
+
+commit 302cc389550f56a42c6bc989ccf44abdcdefda0c
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-10-21 15:57:39 +0900
+
+    Fix a warning message #526881
+
+M	engine/engine.py
+
+commit 088d2d9167bc7492c0d2896e4659cc37c82c17d3
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-10-21 15:47:17 +0900
+
+    Fix string errors #582.
+    Contributed fr.po by Humbert Julien <julroy67@gmail.com>
+
+M	autogen.sh
+M	configure.ac
+M	engine/engine.py
+M	ibus-anthy.spec.in
+M	po/Makevars
+M	po/POTFILES.in
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+M	setup/setup.glade
+
+commit 72b550e424c962d07783594bd0bbe4f808cde91e
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-19 10:40:37 +0900
+
+    Deleted commit 007bec06be96146b2151e5539d981602a4d14ae0.
+
+M	engine/Makefile.am
+D	engine/compose.py
+M	engine/engine.py
+
+commit f09d05126c3d5dfbd2f7e29aec41cc186b0fc49f
+Merge: 4d85ae8 f6dae6e
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-17 20:08:55 +0900
+
+    Merge commit 'fujiwarat/master'
+
+commit f6dae6ed81f38496ec62f657b69de681e02f86c8
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-09-17 13:58:36 +0900
+
+    Fixes regressions again...
+    engine/engine.py: Fix numpad key values.
+    po/ja.po: Updated translations.
+    setup/anthyprefs.py: Change the ten_key_mode default to Convert.
+    setup/setup.glade: Fix regressions again.
+
+M	AUTHORS
+M	engine/engine.py
+M	po/ja.po
+M	setup/anthyprefs.py
+M	setup/setup.glade
+
+commit 8c0d109421483b3769fd18b106e94f0e640b435e
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-09-17 02:19:27 +0900
+
+    Fix ja translation
+
+M	po/ja.po
+
+commit bbd10231f864278e59b864dbd5a7b0ab6386f57d
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-09-17 02:18:22 +0900
+
+    Fix a regression of a glade event.
+
+M	setup/setup.glade
+
+commit 4d85ae841be02eed0ab445429b5ce49c0d616eb4
+Merge: 007bec0 03c6086
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-16 23:02:50 +0900
+
+    Merge commit 'fujiwarat/master'
+
+commit 007bec06be96146b2151e5539d981602a4d14ae0
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-16 22:59:31 +0900
+
+    Implimented compose key processing.
+
+M	engine/Makefile.am
+A	engine/compose.py
+M	engine/engine.py
+
+commit 03c6086d3f6c43a40581eeb792a0a85f726cb55c
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-09-16 18:54:45 +0900
+
+    Replaced the hard-coded digits with values in anthy.h.
+    Removed translatable tag in two message strings.
+
+M	configure.ac
+M	engine/engine.py
+M	setup/setup.glade
+
+commit 048ee7090317bfefea29d7054eac2d39bd8d6a01
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-11 20:42:12 +0900
+
+    Changed convert_to_char_type_{for,back}ward() for segment convert.
+
+M	engine/engine.py
+
+commit 667ae731671e24d141d0bbb034f3522008e0422b
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-10 21:10:03 +0900
+
+    Implimented convert_segment_to_latin command.
+
+M	engine/engine.py
+M	engine/jastring.py
+
+commit f1e7adfc74b938e6b2bcba8b2a3f14593765f279
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-10 15:44:42 +0900
+
+    Implimented "Half Width Space" flag.
+
+M	engine/engine.py
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+M	setup/anthyprefs.py
+M	setup/main.py
+M	setup/setup.glade
+
+commit 45693eb92cdeb52c928d70f36dad1b42614a3083
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-08 15:17:24 +0900
+
+    Implimened convert_segment_to_kana command.
+
+M	engine/engine.py
+
+commit 8d3622f810e5ba887aaa23329dac6f269b37ca98
+Merge: 7e89d3e 4a9511c
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-08 12:48:03 +0900
+
+    Merge commit 'fujiwarat/master'
+
+commit 7e89d3e364331a4c88015d88bb105642bb55a8f3
+Merge: 22c91cc 627a634
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-08 09:24:11 +0900
+
+    Merge commit 'phuang/master'
+
+commit 4a9511c2691b83fc7f7e02e693e44ff9c80f9c34
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-09-07 23:19:54 +0900
+
+    Fix 507 No module named thumb
+
+M	engine/Makefile.am
+
+commit 627a6346eeebea547adb547e6254983cea6bc429
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-09-07 11:37:46 +0900
+
+    Bumped to 1.2.0.20090907
+
+M	ibus-anthy.spec.in
+
+commit 22c91cc35c5ee1807ea30fa4b39ff33a136dca76
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-06 12:51:26 +0900
+
+    Changed some characters in Thumb Table, ASCII => Wide Latin.
+
+M	engine/thumb.py
+
+commit b78da803de4aa7d8f23255d9766ef3101f46b381
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-04 23:50:11 +0900
+
+    Changed cmd_exec position for select_candidates command.
+
+M	engine/engine.py
+
+commit 085c61140df7a1a78a85981c255189954efbd897
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-09-04 22:55:43 +0900
+
+    Requires update_property.
+
+M	engine/engine.py
+
+commit d34e39294edcdff7ca90412eb8e30fa3013570d3
+Author: Takao Fujiwara <tfujiwar@requiem.(none)>
+Date:   2009-09-02 19:24:38 +0900
+
+    Makefile.am: Added git log
+    engine/engine.py: Reverted the change to follow the latest ibus/keysyms.py
+    po/ja.po: Updated translations
+    setup/main.py: Add gettext
+    setup/setup.glade: Updated translatable tag
+
+M	Makefile.am
+M	engine/engine.py
+M	po/ja.po
+M	setup/main.py
+M	setup/setup.glade
+
+commit 6347fc86b2ad1fe9a680143613d1de767ebf3296
+Merge: be41a36 cd5ddf4
+Author: Takao Fujiwara <tfujiwar@requiem.(none)>
+Date:   2009-09-02 19:01:51 +0900
+
+    Merge branch 'master' of git://github.com/hidegit/ibus-anthy
+    
+    Conflicts:
+    	engine/engine.py
+    
+    Fixed merge conflict
+
+commit cd5ddf41e42a38adf8850bb891bb21caa3fb7983
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-08-31 22:52:15 +0900
+
+    Implimented "Thumb Shift" typing method.
+
+M	engine/engine.py
+M	engine/jastring.py
+A	engine/thumb.py
+M	setup/anthyprefs.py
+
+commit be41a363875937a9afefb52448cfe23ac18f3596
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-08-20 18:25:30 +0900
+
+    Call bindtextdomain to resolve i18n issue.
+
+M	setup/Makefile.am
+M	setup/ibus-setup-anthy.in
+M	setup/main.py
+
+commit 3865f09899c69e671fe00d55e0ff61615188476d
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2009-08-20 17:44:06 +0900
+
+    Fix typing_mode_activate
+
+M	engine/engine.py
+
+commit d5ff1b291c4d17b2f1ac643c90f55a8f13f03991
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-08-19 11:25:15 +0900
+
+    fix NUMBERS shortcut_key '0'...'9' -> '_0'...'_9'
+
+M	engine/engine.py
+
+commit e2e52b28ea138f946d5819b385382c1c8005e094
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-08-14 10:32:18 +0900
+
+    Effective convert_to_xxxxx command, when the candidate window is displayed.
+
+M	engine/engine.py
+
+commit c77c9c8129900533e8415c5cc8dceb0327f37c6f
+Author: Takao Fujiwara <takao.fujiwara1@gmail.com>
+Date:   2009-08-13 10:17:33 +0900
+
+    Enhance import gtk
+
+M	engine/engine.py
+
+commit 2e4bf57cf5625ad825a86b55fdfbce39eab360ab
+Author: Takao Fujiwara <tfujiwar@requiem.(none)>
+Date:   2009-08-12 18:07:47 +0900
+
+    Author: Takao Fujiwara <takao.fujiwara1@gmail.com>
+    Date:   Wed Aug 12 18:08:36 2009 +0900
+    
+        Fix reconversion feature
+        Fix commit_first_segment feature
+
+M	engine/engine.py
+
+commit de5a8392910777c72e42120ef4d8206b0c6d7014
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-07-23 14:15:45 +0800
+
+    Use enumerate in for loop statements
+
+M	engine/engine.py
+
+commit 5f6fabc10d33a9bee0de43d851d20b6664b6ef8c
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-07-22 11:48:56 +0900
+
+    fix for ANTHY_HISTORY_FILE
+    add Table entries
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit 030d0a1deb9a0ec187e01ebfba8d1426e9d55d60
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-07-06 10:51:47 +0800
+
+    Add Hideaki ABE <abe.sendai@gmail.com> into AUTHORS
+
+M	AUTHORS
+
+commit 744b98aea6c9a864302fc66976f15249d2a849f8
+Merge: 7224a6d 7dc23e6
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-25 15:37:28 +0800
+
+    Merge commit 'hidegit/master'
+
+commit 7dc23e67974ce7cc182b32def1260a486cc9b50e
+Merge: d55ed0b cd52370
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-25 16:19:59 +0900
+
+    Merge branch 'phuang_master' into next
+
+commit d55ed0bbd0f8498c11d275a9d1d860a94a3e64b1
+Author: hide <hide@localhost.localdomain>
+Date:   2009-06-25 16:06:38 +0900
+
+    <AE13>(yen) key is keycode 132 (evdev) or keycode 133 (xfree86)
+
+M	engine/engine.py
+
+commit 7224a6d4d2309e6c42df52f3a039540bdebc3f02
+Merge: 1ab43e7 cd52370
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-17 17:23:27 +0800
+
+    Merge branch 'master' of git@github.com:phuang/ibus-anthy
+
+commit cd52370442c94814a67e10b28b9fc85d3c128d71
+Merge: 8acfe8d 2bd3943
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-17 16:56:19 +0800
+
+    Merge commit 'hidegit/master'
+    
+    Conflicts:
+    	engine/engine.py
+
+commit 1ab43e76bfbad4f96c8a506f41c72efcf5c44b8f
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-17 15:57:32 +0800
+
+    Fix problems when 'make rpm'
+
+M	configure.ac
+M	ibus-anthy.spec.in
+
+commit 2bd39435adbe329c46acd2cb18a6cd180cf02b5f
+Author: hide <hide@localhost.localdomain>
+Date:   2009-06-17 15:18:47 +0900
+
+    corresponded to both ibus-1.1.0 and ibus-1.2.0
+
+M	engine/engine.py
+
+commit 8acfe8de97a0099aab0b3724c3a95fd409aba6be
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-14 14:47:14 +0800
+
+    Modify process_key_event method and bump version number.
+
+M	configure.ac
+M	engine/engine.py
+
+commit 79083667175ae91bdd1d9171e3ee55b84f2f2a27
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-14 13:51:33 +0800
+
+    Change layout to jp
+
+M	engine/anthy.xml.in.in
+
+commit 78860e65cdd46152cc576db01597d8d01db03504
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-12 11:03:32 +0800
+
+    implemented candidate_clicked method.
+
+M	engine/engine.py
+
+commit 98e56a85635cdbe2d02c681c2e3b04c06f8a2027
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-09 11:04:08 +0900
+
+    Implimented some inner command, checked mode on all inner command
+
+M	engine/engine.py
+M	setup/anthyprefs.py
+
+commit e9c356983cf3e06ad3c67392ca558b221f119257
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-06 11:56:30 +0900
+
+    Implimented multi shortcut key set
+
+M	engine/engine.py
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+M	setup/anthyprefs.py
+M	setup/main.py
+M	setup/setup.glade
+
+commit eede04867dacd2afb657b603cdd42187658b501d
+Merge: 0a4f6d6 d4faf16
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-03 21:17:09 +0900
+
+    Merge branch 'test'
+
+commit d4faf16b47a28d74944eb78676eb786c9d2c4c68
+Merge: 5f4f3b4 911290f
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-03 21:05:50 +0900
+
+    Merge branch 'phuang/master' into test
+
+commit 5f4f3b4d0ae62a677588722af8d2311898efc510
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-03 20:58:32 +0900
+
+    Append some items in hiragana_katakana_table
+
+M	engine/tables.py
+
+commit 911290f1b209fd70f7d3243e766cd8417a5a4387
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-03 11:50:13 +0800
+
+    Ellipsize the shortcuts if the text is too long.
+
+M	setup/main.py
+
+commit 0a4f6d6914521e33d27bfe47880bad52698a682d
+Merge: 0afbf65 24f6a22
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-03 10:25:06 +0900
+
+    Merge branch 'test'
+
+commit 24f6a22f403f0dd446cdc3e2e1ba938e60e0cda2
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-02 22:41:51 +0900
+
+    Replaced romaji_correction_rule.get method by romaji_correction_rule_get function.
+
+M	engine/romaji.py
+M	engine/tables.py
+
+commit b2caa17074633dbe221db5e049a364e8c02163aa
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-02 21:58:07 +0900
+
+    Convert input keysym "Shift+0" => U+3092 in TYPING_MODE_KANA
+
+M	engine/engine.py
+
+commit 0afbf6500ca414ed4a2242fcf7607a1f8d840f97
+Merge: b08c683 9a2b036
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-02 11:11:37 +0900
+
+    Merge branch 'test' into setup_ui_new
+
+commit b08c6836a6a46f87d42717d654a7d3c56a937c97
+Merge: a7fbc51 4099a0c
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-02 10:58:46 +0900
+
+    Merge branch 'phuang/setup_ui_new' into setup_ui_new
+
+commit 9a2b0369493ce74f2529633e4d0baefbee81215c
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-02 09:45:02 +0900
+
+    modified tables.symbol_rule{} and unichar_half_to_full()
+    
+    Japanese zenkaku symbol convert rule:
+    
+    (1) original tables.symbol_rule{}
+    (2) ibus.unichar_half_to_full()
+    (3) rule for Windows, Locale: "EUC-JISX0213", "UTF-8"
+    (4) rule for Mac, Locale: "EUC-JP"
+    
+           (1)     (2)     (3)     (4)
+    '"' - U+201D, U+FF02, U+201D, U+201D
+    "'" - U+2019, U+FF07, U+2019, U+2019
+    "-" - U+30FC, U+FF0D, U+FF0D, U+2212
+    "`" - U+2018, U+FF40, U+2018, U+2018
+    "~" - U+301C, U+FF5E, U+FF5E, U+301C
+    
+    I selected (3).
+
+M	engine/engine.py
+M	engine/jastring.py
+M	engine/segment.py
+M	engine/tables.py
+
+commit 6085129ec2ad6c5b5fe72778b219245fde930423
+Author: Hideaki ABE <abe.sendai@gmail.com>
+Date:   2009-06-01 15:51:48 +0900
+
+    Kana Table fix, U+FF0D -> U+30FC.
+    
+    Sorry, this error is very bad.
+    No match Anthy dictionaly data.
+    No search Google.
+
+M	engine/tables.py
+
+commit 4099a0c22f0eecb220f950fc3d3780e937bfdca4
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-06-01 10:47:05 +0800
+
+    Fix Escape problem and some bugs in tables.py
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit a7fbc51d64f4f0147d1a4d3f6d0a12e5afd7c969
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-05-31 10:28:42 +0800
+
+    Fix problem when press Escape
+
+M	engine/engine.py
+
+commit b8113559288c08e2f279bccf4e1eadb35a95e8b9
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-05-30 15:04:46 +0800
+
+    apply patch from Hideaki ABE.
+
+M	Makefile.am
+M	configure.ac
+M	engine/engine.py
+M	engine/factory.py
+M	engine/ibus-engine-anthy.in
+M	engine/jastring.py
+M	engine/tables.py
+M	ibus-anthy.spec.in
+M	po/POTFILES.in
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+A	setup/Makefile.am
+A	setup/anthyprefs.py
+A	setup/ibus-setup-anthy.in
+A	setup/main.py
+A	setup/prefs.py
+A	setup/setup.glade
+
+commit ba22c5983d2d7987db530f99ed7db65338d1b877
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-04-30 10:01:58 +0800
+
+    Input wide space (U+03000) in Japanese modes.
+
+M	engine/engine.py
+
+commit 9a38d50b45154e028aeacb429934891e1d421f9e
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-04-02 15:34:58 +0800
+
+    Tranlsate "Anthy" in ja.po
+
+M	po/ja.po
+
+commit 59816253168605012a106ba70047907bb1ade3da
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-04-02 15:34:00 +0800
+
+    Translate msg "Romaji"
+
+M	po/ja.po
+
+commit 905cd3c54ff9fe58306541c837595cb841df9d0f
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-04-02 14:32:40 +0800
+
+    Support keysym Hiragana_Katanaka
+
+M	engine/engine.py
+
+commit 9e2cfeec319df46c6fb34043fd258108377b2c6d
+Author: Peng Huang <shawn.p.huang@gmail.com>
+Date:   2009-04-02 13:49:27 +0800
+
+    Support Henkan & Muhenkan keysym.
+
+M	engine/engine.py
+
+commit 499c63d824a1a5f951d15249e9753fca47e4f432
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-03-20 18:36:28 +0800
+
+    Add fr.po by Julroy67 <julroy67@gmail.com>
+
+M	AUTHORS
+M	po/LINGUAS
+A	po/fr.po
+
+commit 348ddc8b8d9a7265492f75c442f12f1045e9ea7a
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-03-20 18:28:58 +0800
+
+    Fix msg in ja.po
+
+M	po/ja.po
+
+commit 07bab88246c8699d549b2f4646e4dcc58df7608a
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-02-24 17:19:01 +0800
+
+    Replace priority with rank
+
+M	engine/anthy.xml.in.in
+
+commit 5395579f434d7f5256474f0661369a0b25e0d760
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-02-24 16:44:22 +0800
+
+    Add priority in anthy.xml
+
+M	engine/anthy.xml.in.in
+
+commit 291a7bb6bb051e1b1e71d64a59af9b3075d47706
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-02-18 19:38:01 +0800
+
+    Fix problem when generate xml.
+
+M	engine/anthy.xml.in.in
+
+commit de40431a13528860630036d8190e4d166e3876eb
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-02-09 10:28:45 +0800
+
+    Use round lookup table.
+
+M	engine/engine.py
+
+commit 5b7bd78a4df238d1c57c952b85ec46227ad0c86a
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-02-07 11:44:38 +0800
+
+    Fix a typo in engine.py.
+
+M	engine/engine.py
+
+commit 194feaf505333003664e8f7d134d25069fcbb3a3
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-02-06 09:47:33 +0800
+
+    Fix problem when generate anthy.xml
+
+M	configure.ac
+M	engine/Makefile.am
+D	engine/anthy.xml.in
+A	engine/anthy.xml.in.in
+
+commit 5fc311c8a1195afca7a29006f8d3e785b35c6b00
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-02-05 15:25:13 +0800
+
+    Migrate ibus-anthy to ibus-1.1.x
+
+M	configure.ac
+M	engine/Makefile.am
+D	engine/anthy.engine.in
+A	engine/anthy.xml.in
+M	engine/engine.py
+M	engine/factory.py
+M	engine/ibus-engine-anthy.in
+M	engine/main.py
+M	ibus-anthy.spec.in
+
+commit 87c79e5ebdbac37e6a7533f2d41a3905ca62692a
+Author: LI Daobing <lidaobing@gmail.com>
+Date:   2009-01-20 19:49:51 +0800
+
+    remove rpath from Makefile.am
+    
+    if anthy real need a rpath, it should be in @ANTHY_LIB@, and Debian/Ubuntu
+    consider the existence of rpath in a file is a bug.
+
+M	engine/Makefile.am
+
+commit 5d7b535d5b6ccbe129c2c76b038b4c9016c9b7ea
+Merge: 5950579 7d7382e
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2009-01-14 10:21:41 +0800
+
+    Merge commit 'matsuu/master'
+
+commit 7d7382e1172a9eea4c62589ea4f2d2a19a3c4a28
+Author: MATSUU Takuto <matsuu@gentoo.org>
+Date:   2009-01-13 19:24:14 +0900
+
+    Add space symbol
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit cc633aca6b9e8638bb57ac3072f9d49dc876643b
+Author: MATSUU Takuto <matsuu@gentoo.org>
+Date:   2009-01-13 18:54:56 +0900
+
+    Fix symbol tables
+
+M	engine/tables.py
+
+commit 31764f1f208178c890e3a8f33e50b8e971e9a111
+Author: MATSUU Takuto <matsuu@gentoo.org>
+Date:   2009-01-13 18:50:49 +0900
+
+    Fix convert handling
+
+M	engine/romaji.py
+
+commit 5950579d59e2a04776fab64d5d05bf0e05706505
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-10-23 14:33:42 +0800
+
+    Update ja.po
+
+M	po/ja.po
+
+commit 151f1f4ea685227c0381add295d96a7bd0bb82ad
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-10 10:16:18 +0800
+
+    Add --force args in autogen.sh
+
+M	autogen.sh
+
+commit 2138830b9a5c950dcd8db23865a762e1157571fa
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-09 18:40:51 +0800
+
+    Modify CFLAGS.
+
+M	autogen.sh
+M	engine/Makefile.am
+
+commit 6ff7e73f6725bb26e535b3052a3de9490a6aa4c8
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 23:13:43 +0800
+
+    Modified typing rule for backslash and Japanese yen.
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit 34f6bbec5bb73f84e0c228734878fee4a0d2c130
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 19:13:21 +0800
+
+    Fix kana typing rules by UTUMI Hirosi <utuhiro78@yahoo.co.jp>.
+
+M	engine/tables.py
+
+commit b68fd916d05fbe5c2be3aa79b8abb3f64d76d7ac
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 17:51:37 +0800
+
+    Change name.
+
+M	engine/kana.py
+
+commit 78daf05a54aba3c0d979bfe4f92ae514d9019332
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 15:11:40 +0800
+
+    Update zh_CN.po
+
+M	po/zh_CN.po
+
+commit 294587606de7da0798aebd44b46a7f2bc5e4e62b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 15:10:37 +0800
+
+    Fix a typo.
+
+M	engine/engine.py
+
+commit ee159653208349c396917be34730b278195f4027
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 15:06:39 +0800
+
+    Commet "n'" in romaji typing rule.
+
+M	engine/tables.py
+
+commit 23a1640aefbd2c251f949c78585df31775b9837d
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 15:05:25 +0800
+
+    Refactory engine.py
+
+M	engine/engine.py
+
+commit bb4a93cf72378b125124d05d18a4f5eac3b49482
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 14:12:40 +0800
+
+    Support Kana typing mode.
+
+M	engine/Makefile.am
+M	engine/engine.py
+M	engine/jastring.py
+A	engine/kana.py
+M	engine/segment.py
+
+commit d70c6f0d300195e10b568990b8bc82acb88efcf1
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 13:04:38 +0800
+
+    Refine coding style.
+
+M	engine/romaji.py
+
+commit b82ce734346f5303f781cda15310a361e11dfa20
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 12:57:24 +0800
+
+    Add is_finished() and pop().
+
+M	engine/segment.py
+
+commit bb1ea5a40167345044fd2f5db5252afa2573f710
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 12:54:55 +0800
+
+    Implement pop method of RomajiSegment.
+
+M	engine/romaji.py
+
+commit e3d28530028dc7fb145c7e2807309782cba2aafc
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 12:47:16 +0800
+
+    Use Segment.pop.
+
+M	engine/jastring.py
+
+commit 51d1686671b5597e29672a2026ccff7640cf4f3a
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 10:39:03 +0800
+
+    Refactory Segment
+
+M	engine/Makefile.am
+M	engine/engine.py
+M	engine/romaji.py
+A	engine/segment.py
+M	engine/tables.py
+
+commit 63faa83cc3086f8f57e6425d82cf38b31e53d9c4
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 09:58:04 +0800
+
+    Remove symbols_set
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit c7940fa8c95fbce3bff95a5c67bc001555de7c46
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 09:31:56 +0800
+
+    Split half_symbol_rule from romaji_typing_rule.
+
+M	engine/romaji.py
+M	engine/tables.py
+
+commit 673e69982143c0cc47de3c93e77453ffc390afa2
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 09:15:07 +0800
+
+    Add romaji.py
+
+M	engine/jastring.py
+A	engine/romaji.py
+
+commit a170b2704194c5a047820cfa5d68e3a22e84e5f7
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 09:03:16 +0800
+
+    Split RomajiSegment from jastring.py
+
+M	engine/Makefile.am
+M	engine/jastring.py
+
+commit 287f00547cb55e969d14ecd7730f8322d94788d6
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 08:59:23 +0800
+
+    Rename JaSegment to RomajiSegemnt.
+
+M	engine/jastring.py
+
+commit 2e690a24c3d080dbfaf8c82cd54b69193c8c030b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 08:56:47 +0800
+
+    Split JaString from engine.py.
+
+M	engine/Makefile.am
+M	engine/engine.py
+A	engine/jastring.py
+
+commit 6a036dbf0d3f3147828d9591a0f902f1e4355522
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 08:38:08 +0800
+
+    Fix soem typos.
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit 8cdb785f56f3957dd0a12493a6dea88435dc4faa
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-03 08:14:29 +0800
+
+    Add Kana Typing  related tables.
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit ea0255953a5b6f1d2a2fc38435cf3da1ffe2988d
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-02 15:30:32 +0800
+
+    Set the Background for preedit_string.
+
+M	engine/engine.py
+
+commit aa328e9eb0962501570158eb9d942cd72afd3fd1
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-09-01 15:40:18 +0800
+
+    Change InputMode labels to recognize them easily.
+
+M	engine/engine.py
+
+commit 548544ad801a5e6a29cd775362413c29ff2c4442
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-31 19:18:25 +0800
+
+    Update po files.
+
+M	po/ja.po
+M	po/zh_CN.po
+
+commit e7a394a31a6fe10ad0775d70fd1dcd8871b85521
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-31 18:54:32 +0800
+
+    Change install folder.
+
+M	engine/Makefile.am
+M	engine/ibus-engine-anthy.in
+
+commit 3f0bbeaad12fd9eaad2d84097f1118b4f5d2d1a0
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-31 10:15:31 +0800
+
+    Set page_size of lookup table to 9.
+
+M	engine/engine.py
+
+commit bea516f4d9a1bb164a80df8065aae23a06585795
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-30 08:00:08 +0800
+
+    Translate engine name.
+
+M	engine/factory.py
+
+commit 5ea3f8adfbd564ff9e3a68deea67dc40fe863dad
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-30 07:41:47 +0800
+
+    Correct last 'n'  to 'ん'
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit a2fe34cfe155842717c7a8d8e10340ce8e7b95ab
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-29 08:23:17 +0800
+
+    Add correction rules for Hiragana typing.
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit a21b77eac885051faddb3aeb7e75b9264188b820
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-29 07:52:52 +0800
+
+    Change cursor position to avoid candidate window swing.
+
+M	engine/engine.py
+
+commit fb021459af202b62bf899448c64bafcf12299b11
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 17:56:30 +0800
+
+    Change variable __input_chars to __preedit_ja_string.
+
+M	engine/engine.py
+
+commit d46b6d7551fd5ac3737ee1db9badcd3ec68aeb9c
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 17:52:07 +0800
+
+    Decorate all preedit string with Underline.
+
+M	engine/engine.py
+
+commit ed14b45ea5089bbf8c066f6637833251b371dec9
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 17:49:33 +0800
+
+    Ignore Fn key event if input_chars is empty.
+
+M	engine/engine.py
+
+commit 9395befee66acdb1748f2619ed0523d7639e2be8
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 17:09:06 +0800
+
+    Update translations for ja and zh_CN
+
+M	po/ja.po
+M	po/zh_CN.po
+
+commit 4485fe836a29a17ad69042413ef106cb44369fbf
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 16:52:40 +0800
+
+    Fix problem when press number.
+
+M	engine/engine.py
+
+commit 9517190ff039f44ec30ff37b53429a33a435958b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 16:09:32 +0800
+
+    Fix problem when press aiueo.
+
+M	engine/engine.py
+
+commit c28c64949da9d8fc6165ec6043c52d1261e9622b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 15:41:46 +0800
+
+    Support F6~9 to convert chars to Hiragana, Katakana & Latin.
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit c47a08bd9f27d3f8f086c6f8d687880a6297462f
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 14:17:27 +0800
+
+    Refactory anthy engine. Add JaString & JaSegment classes.
+
+M	engine/Makefile.am
+M	engine/engine.py
+M	engine/tables.py
+
+commit 3ba701e016171f31bc6eb0d5e5cc3bedc05ade87
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 09:11:21 +0800
+
+    Refine coding style.
+
+M	engine/engine.py
+
+commit cd8417bf976a4a13d972abe4295ae996c397c6de
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 07:36:35 +0800
+
+    Uncomment rule "n'" => "ん".
+
+M	engine/tables.py
+
+commit 5537a8485aabe508d3ec813b000efbec8b4cc1a3
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 07:29:54 +0800
+
+    Add double consonant rule. bb => っb, ...
+
+M	engine/tables.py
+
+commit b40210e8b47e7b534cf91bb39839c2e5b82dbc4d
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-28 07:11:27 +0800
+
+    Fix problem when translate letters to Katakana and Half width Katakana.
+
+M	engine/engine.py
+
+commit 7890800fc3a6fb5c5191dd6804baa5aae36d9f1b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-27 17:39:24 +0800
+
+    Update zh_CN translation.
+
+M	po/zh_CN.po
+
+commit a50d373ef63a9a6f5f9bac447fde8afede53a973
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-27 17:35:57 +0800
+
+    Add ja.po by UTUMI Hirosi <utuhiro78@yahoo.co.jp>.
+
+M	AUTHORS
+M	po/LINGUAS
+A	po/ja.po
+
+commit 30e70213e7e5cbdd87839d61e5a7cbd76991735b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-27 17:34:37 +0800
+
+    Enable locale & gettext.
+
+M	engine/engine.py
+M	engine/main.py
+
+commit 9d5a9aeec47932711ef3f80ba967cb7f09d2e16f
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-27 10:49:42 +0800
+
+    Support segment shrinking.
+
+M	engine/engine.py
+
+commit 030ba62afe335686483f3c2a26739f7acf03f1b8
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-26 21:46:01 +0800
+
+    Fix problem when user presses Backspace or Delete keys.
+
+M	engine/engine.py
+
+commit 1701d94498ef9227a5d5dea79189afa46d3f45eb
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-26 20:13:20 +0800
+
+    Process key event in sync mode.
+
+M	engine/engine.py
+
+commit 72384e0f70371c6c459d5b2248f0aed01dc0b51b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-26 19:52:31 +0800
+
+    Fix problem when translate english letters to Japanes romja.
+
+M	engine/engine.py
+
+commit 6af656ae0b8ae5bb18e18fd70852d5e3aaf865b3
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-21 21:38:08 +0800
+
+    Fix configure warning.
+
+M	engine/ibus-engine-anthy.in
+M	po/zh_CN.po
+
+commit c387042b85990070a5a347562ddeb3f3ae3be63f
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-19 09:05:44 +0800
+
+    Refine code.
+
+M	engine/engine.py
+
+commit 2d8de5944b67c9a23e0383a3073e13e67eca5841
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-15 14:09:37 +0800
+
+    Use more @@.
+
+M	engine/Makefile.am
+M	engine/anthy.engine.in
+M	engine/ibus-engine-anthy.in
+M	ibus-anthy.spec.in
+
+commit 1667a8b717889846ac1b11d5894a0d0bfc014867
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-15 11:36:08 +0800
+
+    Remove test.py from POFILES.in
+
+M	po/POTFILES.in
+
+commit 81ce81ab758a7e790ecf55008a8c1b2a137fd2e9
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-14 21:36:55 +0800
+
+    Add CFLAGS & CXXFLAGS.
+
+M	autogen.sh
+
+commit 5fc5c08ac17c487b9ad7a9d3a1f34707e2e04e24
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-14 08:23:50 +0800
+
+    Use pkgdatadir for icons.
+
+M	icons/Makefile.am
+
+commit 6776309a93d38bfe282592b2ddbb89d7d623c6ac
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-14 08:19:35 +0800
+
+    Use @PACKAGE_NAME@ in spec.in
+
+M	ibus-anthy.spec.in
+
+commit 190702f40ccb0ded38707086b2ca7ed54632cde0
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-13 23:20:43 +0800
+
+    Add i18n support.
+
+M	ibus-anthy.spec.in
+A	po/LINGUAS
+M	po/POTFILES.in
+A	po/zh_CN.po
+
+commit 0d020d985ca471ed77e6178a15f6ff7367848195
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-13 15:59:48 +0800
+
+    Fix problem in spec.
+
+M	ibus-anthy.spec.in
+
+commit 247c55667726963583ac5534b0aadc4b9c111146
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-13 15:56:15 +0800
+
+    Install ibus-engine-anthy in @bindir@
+
+M	engine/Makefile.am
+M	engine/anthy.engine.in
+
+commit c28c742752ece3add8034ebdc16764ab3b48fdf6
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-12 15:08:04 +0800
+
+    Change ibus_micro_version to 1.
+
+M	configure.ac
+
+commit bbd7d388017487ca9371e77eed5c4a0c8e4cf2d7
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-09 14:16:33 +0800
+
+    Remove TestProp
+
+M	engine/engine.py
+
+commit 04a71600d8310a4ed8fe1bea7d95be46a05b1bfe
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-09 14:15:38 +0800
+
+    Implement Latin and Wide Latin input mode.
+
+M	engine/engine.py
+
+commit 04c9b7f8fe89a43f1c576b2557165e60559679c1
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-09 13:41:58 +0800
+
+    Add input mode support.
+
+M	engine/engine.py
+
+commit 18d4a9bfab3409e95299188757c5dda2c45a6cdb
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-09 13:24:15 +0800
+
+    Add symbols support.
+
+M	engine/engine.py
+M	engine/tables.py
+
+commit 3e3baac2d7adce38ab79411eca3a6901048a8452
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-09 13:13:36 +0800
+
+    Add symbols in tables.
+
+M	engine/tables.py
+
+commit 989ff6725e394ed6058b1d478962ecc02864b48b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-09 08:31:32 +0800
+
+    Refine coding style.
+
+M	configure.ac
+
+commit 391eccdb5281b674d15317967c14a9dc895de3b6
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-09 08:20:13 +0800
+
+    Add python-config.py.
+
+M	Makefile.am
+M	configure.ac
+A	python-config.py
+
+commit 0b3b87399a492492a5708ebac23182600fc26f94
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-08 16:58:35 +0800
+
+    Remove commeted lines.
+
+M	ibus-anthy.spec.in
+
+commit 7c78074f06abfa8df3441296bd711cf3030d9b4b
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-08 16:43:41 +0800
+
+    Fix some problem for fedora packaging review.
+
+M	ibus-anthy.spec.in
+
+commit 91f9509cd1f9a0f12e0ccaee923ebf070ff1fd30
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-08 15:23:58 +0800
+
+    Use GPLv2 COPING.
+
+M	COPYING
+
+commit 854ab51e4506e162148e10b43f488a57a3a3fe79
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-08 13:12:13 +0800
+
+    Refine doc.
+
+M	ibus-anthy.spec.in
+
+commit 48b7c4d75d8e8585637297facbc8b29fd392b811
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-08 09:16:07 +0800
+
+    Check it by rpmlint and fixed some problems.
+
+M	README
+M	engine/Makefile.am
+M	ibus-anthy.spec.in
+
+commit 561181ad976bb1b8e489111ee2336536bc17ba9d
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-07 09:37:15 +0800
+
+    Fix mistake of icon file path.
+
+M	engine/anthy.engine.in
+
+commit 5e3b0338afb3e16e6cb0a299108fa478d0aa3a58
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-07 09:30:12 +0800
+
+    Change some env names.
+
+M	engine/Makefile.am
+M	engine/factory.py
+M	engine/ibus-engine-anthy.in
+
+commit 7f4dbd0a16bfc4bb56dbf31eaa38efd96bb5f26e
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-06 14:06:36 +0800
+
+    Fix problem in ibus-anthy.spec.in.
+
+M	ibus-anthy.spec.in
+
+commit e3ce275ef13ae5245f306cdfc0b6f965f48afaae
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-08-06 14:05:31 +0800
+
+    Install icons in @prefix@/share/ibus-anthy/icons.
+
+M	engine/Makefile.am
+M	engine/anthy.engine.in
+M	engine/factory.py
+M	engine/ibus-engine-anthy.in
+M	icons/Makefile.am
+
+commit df7e66da7d4ac0c27914d92faedc8f752d7dfbcc
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-31 13:06:03 +0800
+
+    Rename conn to bus.
+
+M	engine/engine.py
+M	engine/factory.py
+M	engine/main.py
+
+commit 27b327806015f16b91f9b2832e9e7005aa06c607
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-31 07:33:14 +0800
+
+    Fix a typo.
+
+M	engine/main.py
+
+commit 66e6bef38244af606f1fbf08c8ecbfedfa22e1b6
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-28 14:50:56 +0800
+
+    Use IBus Replace dbus.Connection.
+
+M	engine/main.py
+
+commit 0f21c5e8f20c76f856487eb295ac3d0deaaca0bf
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-22 14:39:22 +0800
+
+    Use unicode for label.
+
+M	engine/engine.py
+
+commit baaf25def04b95ff49162f627317f3544b530abf
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-22 14:02:40 +0800
+
+    does not import pango.
+
+M	engine/engine.py
+
+commit 94e58c7da14f35119fab43f71b37d7fcc8fb89ec
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-22 14:02:21 +0800
+
+    Use ibus.ATTR_UNDERLINE_SINGLE.
+
+M	engine/engine.py
+
+commit b127966bc01cf4b3afa46a4f7af9430a5251e032
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-18 17:04:15 +0800
+
+    Rename anthy.engine to anthy.engine.in
+
+M	configure.ac
+M	engine/Makefile.am
+D	engine/anthy.engine
+A	engine/anthy.engine.in
+
+commit d2c733640e3e995002d4e8202aad13e4a2d5fd29
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-18 10:27:11 +0800
+
+    Refactory Engine & EngineFactory.
+
+M	engine/engine.py
+M	engine/factory.py
+M	engine/main.py
+
+commit 7701c38f5d00841f1f4fbb2e888916a09b59e02f
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-15 17:04:39 +0800
+
+    vim settings.
+
+M	engine/engine.py
+M	engine/factory.py
+M	engine/main.py
+M	engine/tables.py
+
+commit 74118afb2d9ae183e71a2246919ce97b2f8c37ba
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-15 13:37:14 +0800
+
+    Refine coding style.
+
+M	engine/engine.py
+M	engine/factory.py
+M	engine/main.py
+M	engine/tables.py
+
+commit 07c018e8c1d7b94432854ec034734665ee4f27c0
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-10 15:41:38 +0800
+
+    Add anthy.engine.
+
+M	engine/Makefile.am
+A	engine/anthy.engine
+M	engine/ibus-engine-anthy.in
+M	ibus-anthy.spec.in
+
+commit 0882b282593ddd02e4e921b73be4006c90938b52
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-08 18:09:54 +0800
+
+    Modify BuildRequires in spec file.
+
+M	ibus-anthy.spec.in
+
+commit cf03784615a9771a09f2bdf2e58a254aff02481f
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-08 18:09:33 +0800
+
+    Add build task srpm.
+
+M	Makefile.am
+
+commit 77d6c856ff55d6e8e61636e78dfd4b32e135c058
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-07-04 11:09:35 +0800
+
+    Add exec in shell launch scritp.
+
+M	engine/ibus-engine-anthy.in
+
+commit 72dfaadcdd51bc4179c1d7a7ffe354c40c4cf179
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-06-30 19:34:48 +0800
+
+    Remove empty line.
+
+M	configure.ac
+
+commit dec189db6c9e312c08fd26d63011f106e443c9db
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-06-30 07:57:45 +0800
+
+    Add .gitignore.
+
+A	engine/.gitignore
+
+commit 8bcbfaeb665b5a9c1edf5fd6545bccca7e4aae63
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-06-30 07:57:04 +0800
+
+    Import ibus-anthy projiect.
+
+M	.gitignore
+M	Makefile.am
+M	configure.ac
+M	engine/Makefile.am
+A	engine/anthy.i
+M	engine/engine.py
+M	engine/factory.py
+A	engine/ibus-engine-anthy.in
+D	engine/ibus-engine-enchant.in
+M	engine/main.py
+A	engine/tables.py
+A	engine/test.py
+A	ibus-anthy.spec.in
+D	ibus-tmpl.spec.in
+M	icons/Makefile.am
+A	icons/ibus-anthy.png
+D	icons/ibus-enchant.svg
+
+commit f6303d37775aff4c1087bea9da91345a5c849afd
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-06-29 16:48:38 +0800
+
+    Add icon.
+
+M	Makefile.am
+M	configure.ac
+M	engine/factory.py
+M	ibus-tmpl.spec.in
+A	icons/Makefile.am
+A	icons/ibus-enchant.svg
+
+commit b741f5db502727dfe40d4087019c882a85d96f9f
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-06-29 16:18:54 +0800
+
+    Use GPLv2.
+
+M	Makefile.am
+M	configure.ac
+M	engine/Makefile.am
+M	engine/engine.py
+M	engine/factory.py
+M	engine/ibus-engine-enchant.in
+M	engine/main.py
+M	ibus-tmpl.spec.in
+M	m4/Makefile.am
+
+commit 1e9f9787283d449fe7446a9fa19924c964980180
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-06-29 16:10:36 +0800
+
+    Add a template engine - enchant.
+
+M	Makefile.am
+M	configure.ac
+A	engine/Makefile.am
+A	engine/engine.py
+A	engine/factory.py
+A	engine/ibus-engine-enchant.in
+A	engine/main.py
+M	ibus-tmpl.spec.in
+
+commit 058ff8eec8aa8a7e5e8e7b404f2f47d87456bfaa
+Author: Huang Peng <shawn.p.huang@gmail.com>
+Date:   2008-06-29 15:57:07 +0800
+
+    Import IBus template project.
+
+A	.gitignore
+A	AUTHORS
+A	COPYING
+A	ChangeLog
+A	Makefile.am
+A	NEWS
+A	README
+A	autogen.sh
+A	configure.ac
+A	ibus-tmpl.spec.in
+A	m4/.gitignore
+A	m4/Makefile.am
+A	m4/as-version.m4
+A	po/.gitignore
+A	po/Makevars
+A	po/POTFILES.in
