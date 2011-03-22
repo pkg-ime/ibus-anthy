@@ -3,13 +3,15 @@ Section: utils
 Priority: optional
 Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
 Uploaders: LI Daobing <lidaobing@debian.org>, Asias He <asias.hejun@gmail.com>
+DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 7), autotools-dev, swig, python-dev (>= 2.5),
- pkg-config, libanthy-dev, python-support, intltool
+ pkg-config, libanthy-dev, python-support, intltool, quilt (>= 0.46-7~)
 Standards-Version: 3.9.1
 Homepage: http://code.google.com/p/ibus
 XS-Python-Version: >= 2.5
-Vcs-Bzr: lp:~pkg-ime/ibus/debian-ibus-anthy
-Vcs-Browser: https://code.launchpad.net/~pkg-ime/ibus/debian-ibus-anthy
+Vcs-Git: git://git.debian.org/git/pkg-ime/ibus-anthy.git
+Vcs-Browser: http://git.debian.org/?p=pkg-ime/ibus-anthy.git
+
 
 Package: ibus-anthy
 Architecture: any

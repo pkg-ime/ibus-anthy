@@ -2,6 +2,7 @@
 
 config.status:
 	dh_testdir
+	dh_quilt_patch
 	cp -f /usr/share/misc/config.sub config.sub
 	cp -f /usr/share/misc/config.guess config.guess
 	dh_auto_configure
@@ -15,6 +16,7 @@ build-stamp: config.status
 clean:
 	dh_testdir
 	dh_testroot
+	dh_quilt_unpatch
 	[ ! -f Makefile ] || $(MAKE) distclean
 	rm -f config.sub config.guess setup/anthyprefs.py
 	rm -f po/*.gmo

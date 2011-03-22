@@ -1,0 +1,10 @@
+--- a/engine/ibus-engine-anthy.in
++++ b/engine/ibus-engine-anthy.in
+@@ -26,7 +26,6 @@
+ exec_prefix=@exec_prefix@
+ libexecdir=@libexecdir@
+ pyexecdir=@pyexecdir@
+-export PYTHONPATH=@pyexecdir@:$PYTHONPATH
+ export IBUS_PREFIX=@prefix@
+ export IBUS_ANTHY_PKGDATADIR=@datarootdir@/@PACKAGE@
+ export LIBEXECDIR=$libexecdir

@@ -1,3 +1,11 @@
+ibus-anthy (1.2.5-2) unstable; urgency=low
+
+  * Fix "Use of PYTHONPATH env var in an insecure way" 
+   (Closes: #605171) (Closes: #605172)
+  * Set Vcs to git.debian.org 
+
+ -- Asias He <asias.hejun@gmail.com>  Tue, 22 Mar 2011 21:47:54 +0800
+
 ibus-anthy (1.2.5-1) unstable; urgency=low
 
   [ Asias He ]
