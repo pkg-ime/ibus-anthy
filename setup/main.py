@@ -4,7 +4,7 @@
 #
 # Copyright (c) 2007-2008 Peng Huang <shawn.p.huang@gmail.com>
 # Copyright (c) 2009 Hideaki ABE <abe.sendai@gmail.com>
-# Copyright (c) 2007-2010 Red Hat, Inc.
+# Copyright (c) 2007-2011 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -528,6 +528,8 @@ class AnthySetup(object):
             return self.prefs.get_value('dict', 'anthy_zipcode')[0]
         elif selected_id == 'ibus_symbol':
             return self.prefs.get_value('dict', 'ibus_symbol')[0]
+        elif selected_id == 'ibus_oldchar':
+            return self.prefs.get_value('dict', 'ibus_oldchar')[0]
         for file in files:
             id = self.__get_quoted_id(file)
             if selected_id == id:
@@ -573,6 +575,8 @@ class AnthySetup(object):
                 id = 'anthy_zipcode'
             elif file in prefs.get_value('dict', 'ibus_symbol'):
                 id = 'ibus_symbol'
+            elif file in prefs.get_value('dict', 'ibus_oldchar'):
+                id = 'ibus_oldchar'
             else:
                 id = self.__get_quoted_id(file)
                 section = 'dict/file/' + id

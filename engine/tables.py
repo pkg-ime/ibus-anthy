@@ -4,7 +4,7 @@
 # ibus-anthy - The Anthy engine for IBus
 #
 # Copyright (c) 2007-2008 Peng Huang <shawn.p.huang@gmail.com>
-# Copyright (c) 2007-2010 Red Hat, Inc.
+# Copyright (c) 2007-2011 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -359,7 +359,12 @@ romaji_correction_rule = {
 
 # EUC-JP and SJIS do not have the chars
 romaji_utf8_rule = {
-    u"ヴ" : (u"ゔ"),
+    u"う゛" : [u"ゔ"],
+}
+
+# Hiragana normalization is needed for the personal dict.
+romaji_normalize_rule = {
+    u"ヴ" : [u"う゛"],
 }
 
 # a port of 101kana.sty from scim-anthy

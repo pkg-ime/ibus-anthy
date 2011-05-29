@@ -4,7 +4,7 @@
 # ibus-anthy - The Anthy engine for IBus
 #
 # Copyright (c) 2007-2008 Peng Huang <shawn.p.huang@gmail.com>
-# Copyright (c) 2007-2010 Red Hat, Inc.
+# Copyright (c) 2007-2011 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -721,7 +721,8 @@ class Engine(ibus.EngineBase):
         files = self.__prefs.get_value('dict', 'files')
         if id == 'embedded':
             pass
-        elif id == 'anthy_zipcode' or id == 'ibus_symbol':
+        elif id == 'anthy_zipcode' or id == 'ibus_symbol' or \
+             id == 'ibus_oldchar':
             file = self.__prefs.get_value('dict', id)[0]
         else:
             found = False
@@ -756,6 +757,9 @@ class Engine(ibus.EngineBase):
             self.__update_input_chars()
 #        self.__reset()
 #        self.__invalidate()
+        size = self.__prefs.get_value('common', 'page_size')
+        if size != self.__lookup_table.get_page_size():
+            self.__lookup_table.set_page_size(size)
 
     def focus_out(self):
         mode = self.__prefs.get_value('common', 'behavior_on_focus_out')
@@ -789,6 +793,15 @@ class Engine(ibus.EngineBase):
             else:
                 break
 
+    def __normalize_preedit(self, preedit):
+        if not self.__is_utf8:
+            return preedit
+        for key in romaji_normalize_rule.keys():
+            if preedit.find(key) >= 0:
+                for value in romaji_normalize_rule[key]:
+                    preedit = preedit.replace(key, value)
+        return preedit
+
     # begine convert
     def __begin_anthy_convert(self):
         if self.__segment_mode & SEGMENT_IMMEDIATE:
@@ -800,6 +813,7 @@ class Engine(ibus.EngineBase):
 #        text, cursor = self.__preedit_ja_string.get_hiragana()
         text, cursor = self.__preedit_ja_string.get_hiragana(True)
 
+        text = self.__normalize_preedit(text)
         self.__context.set_string(text.encode("utf8"))
         if self.__segment_mode & SEGMENT_SINGLE:
             self.__join_all_segments()
@@ -832,6 +846,7 @@ class Engine(ibus.EngineBase):
     def __end_convert(self):
         self.__end_anthy_convert()
 
+    # test case 'verudhi' can show U+3046 + U+309B and U+3094
     def __candidate_cb(self, candidate):
         if not self.__is_utf8:
             return
@@ -1439,6 +1454,8 @@ class Engine(ibus.EngineBase):
             id = 'anthy_zipcode'
         elif file in cls.__prefs.get_value('dict', 'ibus_symbol'):
             id = 'ibus_symbol'
+        elif file in cls.__prefs.get_value('dict', 'ibus_oldchar'):
+            id = 'ibus_oldchar'
         else:
             id = cls._get_quoted_id(file)
         return id
