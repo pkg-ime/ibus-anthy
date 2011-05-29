@@ -19,8 +19,8 @@
 #
 # ibus-anthy - The Anthy engine for IBus
 #
-# Copyright (c) 2010 Takao Fujiwara <takao.fujiwara1@gmail.com>
-# Copyright (c) 2010 Red Hat, Inc.
+# Copyright (c) 2010-2011 Takao Fujiwara <takao.fujiwara1@gmail.com>
+# Copyright (c) 2010-2011 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -124,6 +124,7 @@ DATADIRNAME = @DATADIRNAME@
 DATE_DISPLAY = @DATE_DISPLAY@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DLLTOOL = @DLLTOOL@
 DSYMUTIL = @DSYMUTIL@
 DUMPBIN = @DUMPBIN@
 ECHO_C = @ECHO_C@
@@ -164,6 +165,7 @@ LTLIBINTL = @LTLIBINTL@
 LTLIBOBJS = @LTLIBOBJS@
 MAINT = @MAINT@
 MAKEINFO = @MAKEINFO@
+MANIFEST_TOOL = @MANIFEST_TOOL@
 MKDIR_P = @MKDIR_P@
 MSGFMT = @MSGFMT@
 MSGFMT_015 = @MSGFMT_015@
@@ -213,6 +215,7 @@ abs_builddir = @abs_builddir@
 abs_srcdir = @abs_srcdir@
 abs_top_builddir = @abs_top_builddir@
 abs_top_srcdir = @abs_top_srcdir@
+ac_ct_AR = @ac_ct_AR@
 ac_ct_CC = @ac_ct_CC@
 ac_ct_CXX = @ac_ct_CXX@
 ac_ct_DUMPBIN = @ac_ct_DUMPBIN@
@@ -266,11 +269,13 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 dicts_DATA = \
+	oldchar.t \
 	symbol.t \
 	$(NULL)
 
 dictsdir = $(pkgdatadir)/dicts
 EXTRA_DIST = \
+        oldchar.t \
         symbol.t \
         $(NULL)
 

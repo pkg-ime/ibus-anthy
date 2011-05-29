@@ -1,3 +1,124 @@
+commit ff016097f53b00bde1f9fc69e6242ed31b20ff1c
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2011-05-16 11:01:04 +0900
+
+    Released 1.2.6
+    
+    Fixed the latest page_size for ibus.LookupTable.
+    Updated Romaji table with Gairaigo.
+
+M	configure.ac
+
+commit 51ca600061a580ff415fb3ab54fe784afa8804e8
+Author: Julien Humbert <julroy67@gmail.com>
+Date:   2011-05-13 14:04:23 +0200
+
+    Correct name in header
+
+M	po/fr.po
+
+commit 1cdf70275e1e034bdcf49a25e60813398096de8f
+Author: Julien Humbert <julroy67@gmail.com>
+Date:   2011-05-13 14:02:56 +0200
+
+    Update French translation
+
+M	po/fr.po
+
+commit 9df35978cc736accb5b647b1d293cc350aae1373
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2011-05-13 15:27:35 +0900
+
+    Added pot file.
+
+A	po/ibus-anthy.pot
+
+commit 1cdc0b5bdf804c924f34a572ef552c1604555802
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2011-05-13 14:51:01 +0900
+
+    Updated .po files with the latest pot.
+
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+
+commit a86df1b6d8fc0552c82fd3e63f003566444e0014
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2011-05-13 10:33:20 +0900
+
+    Added an old character dict.
+
+M	data/Makefile.am
+A	data/oldchar.t
+M	engine/engine.py
+M	engine/tables.py
+M	setup/anthyprefs.py.in
+M	setup/main.py
+
+commit 35f0898601caf39bc5a5c71765f734f5b749a3e1
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2011-05-12 14:16:29 +0900
+
+    Updated Romaji table with Gairaigo.
+
+M	setup/anthyprefs.py.in
+
+commit acf1189284ad7b9fe9f76afc9a972057124b386f
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2011-01-17 14:16:47 +0900
+
+    Updated copyright.
+
+M	Makefile.am
+M	configure.ac
+M	data/Makefile.am
+M	data/symbol.t
+M	engine/Makefile.am
+M	engine/anthy.i
+M	engine/engine.py
+M	engine/factory.py
+M	engine/ibus-engine-anthy.in
+M	engine/jastring.py
+M	engine/kana.py
+M	engine/main.py
+M	engine/romaji.py
+M	engine/segment.py
+M	engine/tables.py
+M	engine/thumb.py
+M	icons/Makefile.am
+M	m4/Makefile.am
+M	po/fr.po
+M	po/ja.po
+M	po/zh_CN.po
+M	setup/Makefile.am
+M	setup/anthyprefs.py.in
+M	setup/ibus-setup-anthy.in
+M	setup/main.py
+M	setup/prefs.py
+
+commit 35e2d3a76f6d40d293a470c835e7383912acef98
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-12-17 10:19:42 +0900
+
+    Added debian directory.
+
+A	debian/changelog
+A	debian/compat
+A	debian/control
+A	debian/copyright
+A	debian/rules
+A	debian/source/format
+A	debian/watch
+
+commit 70633cda85851e0cdd6353d553649cbb51200a5c
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-12-10 14:54:15 +0900
+
+    Fixed the latest page_size for ibus.LookupTable.
+
+M	engine/engine.py
+
 commit 797b4a230935036498ec71378700f0babe00a9ca
 Author: fujiwarat <takao.fujiwara1@gmail.com>
 Date:   2010-12-01 14:39:26 +0900

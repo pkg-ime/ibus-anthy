@@ -79,7 +79,7 @@ class AnthyPrefs(Prefs):
         return _japanese_ordered_list
 
     def get_version(self):
-        return '@VERSION@'
+        return '1.2.6'
 
 # Sad! dict.keys() doesn't return the saved order.
 # locale.strcoll() also just returns the Unicode code point.
@@ -245,9 +245,9 @@ _config = {
 
         'shortcut_type': 'default',
 
-        'dict_admin_command': ['@KASUMI_EXEC_FILE@', 'kasumi'],
-        'add_word_command': ['@KASUMI_EXEC_FILE@', 'kasumi', '-a'],
-        'dict_config_icon': '@KASUMI_ICON_FILE@',
+        'dict_admin_command': ['/usr/local/bin/kasumi', 'kasumi'],
+        'add_word_command': ['/usr/local/bin/kasumi', 'kasumi', '-a'],
+        'dict_config_icon': '/usr/local/share/pixmaps/kasumi.png',
     },
 
     'romaji_typing_rule': {
@@ -815,13 +815,13 @@ _config = {
     },
 
     'dict': {
-        'anthy_zipcode': ['@ANTHY_ZIPCODE_FILE@'],
-        'ibus_symbol': ['@pkgdatadir@/dicts/symbol.t'],
-        'ibus_oldchar': ['@pkgdatadir@/dicts/oldchar.t'],
+        'anthy_zipcode': ['/usr/local/share/anthy/zipcode.t'],
+        'ibus_symbol': ['/usr/local/share/ibus-anthy/dicts/symbol.t'],
+        'ibus_oldchar': ['/usr/local/share/ibus-anthy/dicts/oldchar.t'],
         'files': [
-            '@ANTHY_ZIPCODE_FILE@',
-            '@pkgdatadir@/dicts/symbol.t',
-            '@pkgdatadir@/dicts/oldchar.t',
+            '/usr/local/share/anthy/zipcode.t',
+            '/usr/local/share/ibus-anthy/dicts/symbol.t',
+            '/usr/local/share/ibus-anthy/dicts/oldchar.t',
         ],
     },
 
