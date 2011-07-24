@@ -1,3 +1,12 @@
 #!/usr/bin/make -f
 %:
-	dh  $@ --with quilt
+	dh  $@ --with python2 --with autotools-dev
+
+override_dh_python2:
+	dh_python2 --no-guessing-versions
+	# without --no-guessing-versions, build fails
+
+override_dh_strip:
+	dh_strip
+	-rm -f $(CURDIR)/debian/ibus-anthy/usr/share/pyshared/*.la
+	-rm -f $(CURDIR)/debian/ibus-anthy/usr/lib/python2.*/dist-packages/*.la

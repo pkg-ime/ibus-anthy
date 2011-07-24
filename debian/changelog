@@ -1,7 +1,16 @@
+ibus-anthy (1.2.6-2) unstable; urgency=low
+
+  * Used "dh $@ --with python2 --with autotools-dev"
+  * Removed *.la files.
+  * Added DEP-3 patch tagging and DEP-5 copyright file.
+
+ -- Osamu Aoki <osamu@debian.org>  Sun, 24 Jul 2011 19:40:28 +0900
+
 ibus-anthy (1.2.6-1) unstable; urgency=low
 
   * New upstream release 
-  * Bump standards version to 3.9.2 
+  * Bump standards version to 3.9.2
+  * Use dh style debian/rules
 
  -- Asias He <asias.hejun@gmail.com>  Sun, 29 May 2011 12:45:56 +0800
 

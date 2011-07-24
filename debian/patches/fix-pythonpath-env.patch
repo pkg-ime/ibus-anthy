@@ -1,3 +1,6 @@
+Author: Sandro Tosi <morph@debian.org>
+Description: Use of PYTHONPATH env var in an insecure way
+Bug-Debian: http://bugs.debian.org/605171
 --- a/engine/ibus-engine-anthy.in
 +++ b/engine/ibus-engine-anthy.in
 @@ -26,7 +26,6 @@

@@ -2,13 +2,13 @@ Source: ibus-anthy
 Section: utils
 Priority: optional
 Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
-Uploaders: LI Daobing <lidaobing@debian.org>, Asias He <asias.hejun@gmail.com>
+Uploaders: LI Daobing <lidaobing@debian.org>, Asias He <asias.hejun@gmail.com>, Osamu Aoki <osamu@debian.org>
 DM-Upload-Allowed: yes
-Build-Depends: debhelper (>= 7), autotools-dev, swig, python-dev (>= 2.5),
- pkg-config, libanthy-dev, python-support, intltool, quilt (>= 0.46-7~)
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, swig, python-dev (>= 2.6.6-3~),
+ pkg-config, libanthy-dev, intltool
 Standards-Version: 3.9.2
 Homepage: http://code.google.com/p/ibus
-XS-Python-Version: >= 2.5
+X-Python-Version: >= 2.5
 Vcs-Git: git://git.debian.org/git/pkg-ime/ibus-anthy.git
 Vcs-Browser: http://git.debian.org/?p=pkg-ime/ibus-anthy.git
 
@@ -16,7 +16,6 @@ Vcs-Browser: http://git.debian.org/?p=pkg-ime/ibus-anthy.git
 Package: ibus-anthy
 Architecture: any
 Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, ibus (>= 1.2), anthy
-XB-Python-Version: ${python:Versions}
 Description: anthy engine for IBus
  IBus is an Intelligent Input Bus. It is a new input framework for Linux
  OS. It provides full featured and user friendly input method user interface.
